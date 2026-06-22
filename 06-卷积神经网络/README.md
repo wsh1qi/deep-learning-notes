@@ -35,3 +35,20 @@
 |------|-----------|
 | Batch Norm | 对 batch 维度归一化 |
 | Layer Norm | 对 feature 维度归一化（Transformer 常用） |
+
+---
+
+## 课件截图
+
+### SIFT 算法
+
+![SIFT](../assets/note_img_12.jpg)
+
+### 卷积操作详解
+
+![卷积操作](../assets/note_img_19.jpg)
+
+### VGG 与 ResNet 架构
+
+![VGG ResNet](../assets/note_img_20.jpg)
+![网络对比](../assets/note_img_21.jpg)

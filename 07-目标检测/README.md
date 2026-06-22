@@ -45,3 +45,20 @@ $$\text{IoU} = \frac{\text{交集面积}}{\text{并集面积}}$$
 ## DERT
 
 CNN + Transformer 架构，端到端目标检测。
+
+---
+
+## 课件截图
+
+### IoU 与评价指标
+
+![IoU AP mAP](../assets/note_img_25.jpg)
+
+### R-CNN 系列架构
+
+![R-CNN](../assets/note_img_22.jpg)
+![Faster R-CNN](../assets/note_img_23.jpg)
+
+### NMS 非极大值抑制
+
+![NMS](../assets/note_img_24.jpg)

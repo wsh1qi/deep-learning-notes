@@ -1,0 +1,78 @@
+--- Image 01: note_img_01.tiff (574.2 KB) ---
+Context: 深度学习导论笔记 遗憾值：损失函数值 - 最优情况下的损失 通过优化的方法让每一轮的平均遗憾值趋于 0 在线凸优化（ Online Convex Optimization ） <img style="max-width: 100%; max-height: 100%;" src="data:image/tiff;base64,TU0AKgA0mzj9/Pz9/Pz9/Pz9/Pz9/Pz9/Pz9
+
+--- Image 02: note_img_02.tiff (3370.3 KB) ---
+Context: Kt8s2y7bMNcy1zTXNtc42zrbPN8+40DnQutE80b7SP9LB00TTxtRJ1MvVTtXR1lXW2Ndc1+DYZNjo2WzZ8dp22vvbgNwF3IrdEN2W3hzeot8p36/gNuC94UThzOJT4tvjY+Pr5HPk/OWE5g3mlucf56noMui86Ubp0Opb6uXrcOv77IbtEe2c7ijutO9A78zwWPDl8XL
+
+--- Image 03: note_img_03.tiff (7718.3 KB) ---
+Context: 样本属性中仅包含特征，没 有标签信息 n 强化学习 ： p 无固定数据集，算法会通过 与环境交互的方式获取奖励 反馈 (Reward Feedback) 概念和目标概念：其实就是映射 叫成了概念 假设空间：所有可能的概念构成的集合 VC 维的定义： 假设空间 ℋ 的 VC 维是能被 ℋ 打散的最大样本集的大小 VC 维的定义与数据分布无关 神经网络的</h2
+
+--- Image 04: note_img_04.tiff (939.6 KB) ---
+Context: 1> ） 有限不可分的假设空间，收敛速率为 O （ 1/sqrt （ m ）） 无限假设空间，如果 VC 维为 k ，那么泛化误差的收敛速率为 整体的收敛速度越来越慢，所需参数量越来越大 经验风险最小化背后依托的是大数定律，但是容易陷入过拟合 对此引入了正则化（结构风险最小化，岭回归， lasso 回归） Lasso 回归可以使用次梯度下降或近端梯度下降 <img style="max-width
+
+--- Image 05: note_img_05.tiff (3650.1 KB) ---
+Context: nzp/Q09ML1UPXe9m32+/eK+Bn4qPk4+cf6V/rn+3f8B/yY/Sn9uv5L/tz/bf//"/> 整体的收敛速度越来越慢，所需参数量越来越大 经验风险最小化背后依托的是大数定律，但是容易陷入过拟合 对此引入了正则化（结构风险最小化，岭回归， lasso 回归） Lasso 回归可以使用次梯度下降或近端梯度下降 二分类交叉熵损失：来自极大似然估计 Sigmoid 函
+
+--- Image 06: note_img_06.tiff (2917.0 KB) ---
+Context: 极大似然估计 Sigmoid 函数： 1/ （ 1+e^-z ） ， $$\sigma'(z) = \sigma(z)(1 - \sigma(z))$$ ，问题是容易出现梯度消失 监督学习：二分类 逻辑回归，力求让每次预测都正确， sigmoid 函数连乘后取对数（极大似然估计） <img style="max-width: 100%; max-height: 100%;" src="data:i
+
+--- Image 07: note_img_07.tiff (6245.0 KB) ---
+Context: G1EnUy9VO1dHWVdbY11zX4Nhk2OjZbNnx2nba+9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3hROHM4lPi2+Nj4+vkc+T85YTmDeaW5x/nqegy6LzpRunQ6lvq5etw6/vshu0R7ZzuKO6070DvzPBY8OXxcvH/8ozzGfOn9DT0wvVQ9d72bfb794r4Gfio+Tj5x/pX+uf7d/w
+
+--- Image 08: note_img_08.tiff (5623.3 KB) ---
+Context: BZ8Hjwl/C28NYw9TEUcTOxUvFyMZGxsPHQce/yD3IvMk6ybnKOMq3yzbLtsw1zLXNNc21zjbOts83z7jQOdC60TzRvtI/0sHTRNPG1EnUy9VO1dHWVdbY11zX4Nhk2OjZbNnx2nba+9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3hROHM4lPi2+Nj4+vkc+T85YTmDeaW5x/
+
+--- Image 09: note_img_09.tiff (883.0 KB) ---
+Context: ） 。 多分类任务（以手写数字识别为例） ：由于直接预测离散标签难以求导 ，输出层后面必须挂上一个 Softmax 函数 ，将原本放飞自我的实数输出，归一化为代表各个类别的后验概率预测值 $\hat{y}$ 。结合最大对数似然估计，推导出工程上最经典的 交叉熵损失（ Cross-entropy Loss ） 。 y 是真实值， yhat 是预测值 分类类
+
+--- Image 10: note_img_10.tiff (6477.3 KB) ---
+Context: ">或类别索引整数 唯真独尊 ：由于非真类 $y_c=0$，模型只盯着真实标签通道的概率进行惩罚。 反向传播过程中，一般先求出误差项，再用误差项乘以上一层的输出，得到这一层的梯度。得到梯度以后就可以结合步长进行参数的修正 问题是损失函数不是凸函数，同时梯度下降计算量过大：引入 SGD ，随机梯队下降：取一个小样本，计算平均梯度，使用这个平均梯度去给每一层的参数做更新。有助于跳出局部最优。 <img
+
+--- Image 11: note_img_11.tiff (6499.0 KB) ---
+Context: zbLtsw1zLXNNc21zjbOts83z7jQOdC60TzRvtI/0sHTRNPG1EnUy9VO1dHWVdbY11zX4Nhk2OjZbNnx2nba+9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3hROHM4lPi2+Nj4+vkc+T85YTmDeaW5x/nqegy6LzpRunQ6lvq5etw6/vshu0R7ZzuKO6070DvzPBY8OXxcvH/8
+
+--- Image 12: note_img_12.tiff (2554.7 KB) ---
+Context: uK4trqGvFq+LsACwdbDqsWCx1rJLssKzOLOutCW0nLUTtYq2AbZ5tvC3aLfguFm40blKucK6O7q1uy67p7whvJu9Fb2Pvgq+hL7/v3q/9cBwwOzBZ8Hjwl/C28NYw9TEUcTOxUvFyMZGxsPHQce/yD3IvMk6ybnKOMq3yzbLtsw1zLXNNc21zjbOts83z7jQOdC60TzR
+
+--- Image 13: note_img_13.tiff (4787.0 KB) ---
+Context: ZbNnx2nba+9uA3AXcit0Q3ZbeHN6i3ynfr+A24L3hROHM4lPi2+Nj4+vkc+T85YTmDeaW5x/nqegy6LzpRunQ6lvq5etw6/vshu0R7ZzuKO6070DvzPBY8OXxcvH/8ozzGfOn9DT0wvVQ9d72bfb794r4Gfio+Tj5x/pX+uf7d/wH/Jj9Kf26/kv+3P9t//8="/> 数据增
+
+--- Image 14: note_img_14.tiff (4847.0 KB) ---
+Context: jY+Pr5HPk/OWE5g3mlucf56noMui86Ubp0Opb6uXrcOv77IbtEe2c7ijutO9A78zwWPDl8XLx//KM8xnzp/Q09ML1UPXe9m32+/eK+Bn4qPk4+cf6V/rn+3f8B/yY/Sn9uv5L/tz/bf//"/> 对称权重”：同一 层神经元参数初始化 相同，则前向传播与 反向梯度都相同，等 价于该层只有一个神 经元。 <i
+
+--- Image 15: note_img_15.tiff (4632.6 KB) ---
+Context: LB1sOqxYLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4WbjRuUq5wro7urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUS
+
+--- Image 16: note_img_16.tiff (2610.9 KB) ---
+Context: YLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4WbjRuUq5wro7urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUSdTL1U7V
+
+--- Image 17: note_img_17.tiff (3837.7 KB) ---
+Context: LB1sOqxYLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4WbjRuUq5wro7urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUS
+
+--- Image 18: note_img_18.tiff (4188.7 KB) ---
+Context: 的平滑项 致命缺陷：由于 $v_t$ 是纯粹的平方累加，它在训练过程中只会单调递增 。这导致每个参数的学习率会逐渐收敛至 0 ，使模型在训练后期提前陷入停滞，无法继续学习 。 <img style="max-width: 100%; max-height: 100%;" src="data:image/tiff;base64,TU0AKgBX3fD/////////////////////////
+
+--- Image 19: note_img_19.tiff (5627.1 KB) ---
+Context: YLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4WbjRuUq5wro7urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUSdTL1U7V
+
+--- Image 20: note_img_20.tiff (4597.7 KB) ---
+Context: ACwdbDqsWCx1rJLssKzOLOutCW0nLUTtYq2AbZ5tvC3aLfguFm40blKucK6O7q1uy67p7whvJu9Fb2Pvgq+hL7/v3q/9cBwwOzBZ8Hjwl/C28NYw9TEUcTOxUvFyMZGxsPHQce/yD3IvMk6ybnKOMq3yzbLtsw1zLXNNc21zjbOts83z7jQOdC60TzRvtI/0sHTRNPG1
+
+--- Image 21: note_img_21.tiff (5700.9 KB) ---
+Context: LB1sOqxYLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4WbjRuUq5wro7urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUS
+
+--- Image 22: note_img_22.tiff (6826.7 KB) ---
+Context: Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUSdTL1U7V0dZV1tjXXNfg2GTY6Nls2fHadtr724DcBdyK3RDdlt4c3qLfKd+v4DbgveFE4cziU+Lb42Pj6+R
+
+--- Image 23: note_img_23.tiff (6762.3 KB) ---
+Context: YLHWskuywrM4s660JbSctRO1irYBtnm28Ldot+C4WbjRuUq5wro7urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUSdTL1U7V
+
+--- Image 24: note_img_24.tiff (8218.7 KB) ---
+Context: urW7LrunvCG8m70VvY++Cr6Evv+/er/1wHDA7MFnwePCX8Lbw1jD1MRRxM7FS8XIxkbGw8dBx7/IPci8yTrJuco4yrfLNsu2zDXMtc01zbXONs62zzfPuNA50LrRPNG+0j/SwdNE08bUSdTL1U7V0dZV1tjXXNfg2GTY6Nls2fHadtr724DcBdyK3RDdlt4c3qLfKd+v
+
+--- Image 25: note_img_25.tiff (7499.3 KB) ---
+Context: W+rl63Dr++yG7RHtnO4o7rTvQO/M8Fjw5fFy8f/yjPMZ86f0NPTC9VD13vZt9vv3ivgZ+Kj5OPnH+lf65/t3/Af8mP0p/br+S/7c/23//w=="/> 交并比： IoU 两个矩形框的交集面积除以并集面积 PR 曲线 AP mAP R-CNN ： 取若干个区域 对每个区域做特征提取看看这个区域对应的是什么对象 位置精修：边界框回
+
+--- Image 26: note_img_26.tiff (6530.2 KB) ---
+Context: h1> DERT ： CNN+Transformer 图像分类 目标检测 语义分割 实例分割 密集预测要求每个像素都做出精确预测 语义分割：为图像中的每一个像素点分配一个语义类别标签 上采样需要用到反池化方法：有最近邻插值和 0 填充
+

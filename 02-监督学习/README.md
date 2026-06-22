@@ -52,3 +52,15 @@ $$\sigma'(z) = \sigma(z)(1 - \sigma(z))$$
 |----------|------|----------|-----------|----------|----------|
 | 二分类 | BCE Loss | Sigmoid | 1 个 | 标量 0/1 | 正负兼顾：用 $y$ 和 $1-y$ 做开关 |
 | 多分类 | CCE/CE | Softmax | $k$ 个 | One-hot / 类别索引 | 唯真独尊：只盯真实标签通道惩罚 |
+
+---
+
+## 课件截图
+
+### Sigmoid 函数与极大似然估计
+
+![Sigmoid MLE](../assets/note_img_06.jpg)
+
+### 逻辑回归与 SVM
+
+![逻辑回归 SVM](../assets/note_img_07.jpg)

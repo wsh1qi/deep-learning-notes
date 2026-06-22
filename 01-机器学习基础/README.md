@@ -64,3 +64,23 @@
 | Lasso 回归 | $L_1$ 范数 |
 
 > Lasso 回归可使用次梯度下降或近端梯度下降（Proximal Gradient Descent）。
+
+---
+
+## 课件截图
+
+### 在线凸优化与遗憾值
+
+![在线凸优化](../assets/note_img_01.jpg)
+
+### 学习范式对比
+
+![学习范式](../assets/note_img_03.jpg)
+
+### VC 维与泛化误差
+
+![VC维与泛化](../assets/note_img_04.jpg)
+
+### 收敛速率与正则化
+
+![收敛速率](../assets/note_img_05.jpg)

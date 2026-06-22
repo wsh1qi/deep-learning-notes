@@ -28,3 +28,17 @@ $$\theta_{t+1} = \theta_t - \frac{\eta}{\sqrt{v_t} + \delta} \odot g_t$$
 > $v_t$ 是纯粹的平方累加，在训练过程中**只会单调递增**。导致每个参数的学习率逐渐收敛至 0，模型在训练后期提前陷入停滞，无法继续学习。
 
 **改进方案**：RMSProp、Adam（引入指数移动平均替代累加）。
+
+---
+
+## 课件截图
+
+### Adagrad 更新公式与缺陷
+
+![Adagrad](../assets/note_img_18.jpg)
+
+### 优化器对比
+
+![优化器对比](../assets/note_img_15.jpg)
+![优化器公式](../assets/note_img_16.jpg)
+![优化器细节](../assets/note_img_17.jpg)

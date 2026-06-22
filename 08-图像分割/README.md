@@ -33,4 +33,16 @@
 ```
 图像分类 → 目标检测 → 语义分割 → 实例分割
           (R-CNN 系列)   (FCN)      (Mask R-CNN)
+
+---
+
+## 课件截图
+
+### DERT：CNN + Transformer
+
+![DERT](../assets/note_img_26.jpg)
+
+### 图像分割发展脉络
+
+![分割发展](../assets/note_img_02.jpg)
 ```

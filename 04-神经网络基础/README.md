@@ -66,3 +66,27 @@
 ## 归一化
 
 批归一化（Batch Normalization）：加速训练，缓解梯度问题。
+
+---
+
+## 课件截图
+
+### Softmax 与交叉熵
+
+![Softmax CE](../assets/note_img_09.jpg)
+
+### 输出层分类速查表
+
+![分类速查表](../assets/note_img_10.jpg)
+
+### 反向传播与 SGD
+
+![反向传播 SGD](../assets/note_img_11.jpg)
+
+### 数据增强
+
+![数据增强](../assets/note_img_13.jpg)
+
+### 对称权重问题
+
+![对称权重](../assets/note_img_14.jpg)
