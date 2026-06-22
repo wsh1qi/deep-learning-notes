@@ -1,0 +1,19 @@
+# macOS
+.DS_Store
+
+# Jupyter notebooks
+.ipynb_checkpoints/
+*.ipynb
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Data files (keep small datasets, ignore large ones)
+data/*.h5
+data/*.pkl
+data/*.tar.gz
+*.pth
+*.pt
